@@ -1,0 +1,2 @@
+{ siteTitle = "Godu's Zettelkasten"
+}

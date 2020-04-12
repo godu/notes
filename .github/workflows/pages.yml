@@ -1,0 +1,33 @@
+name: Github Pages 🗐
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source 📡
+      uses: actions/checkout@v2
+    - name: Install Nix ❄️
+      uses: cachix/install-nix-action@v8
+    - name: Install Cachix 📒
+      uses: cachix/cachix-action@v4
+      with:
+        name: srid
+        signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
+    - name: Install Neuron 🧠
+      run: |
+        nix-env -iE '_: let src = builtins.fetchGit { url = "https://github.com/srid/neuron"; ref = "master"; }; in import src.outPath { gitRev = src.shortRev; }' --option tarball-ttl 0
+    - name: Build 🚧
+      run: |
+        neuron rib -o .output -d .
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: .output
