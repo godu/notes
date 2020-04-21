@@ -25,6 +25,14 @@ jobs:
     - name: Build 🚧
       run: |
         neuron rib -o .output -d .
+    - name: Generate SVG Diagrams 📊
+      uses: cloudbees/plantuml-github-action@master
+      with:
+          args: -v -o .output -tsvg **/*.puml
+    - name: Generate PNG Diagrams 📊
+      uses: cloudbees/plantuml-github-action@master
+      with:
+          args: -v -o .output -tpng **/*.puml
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
