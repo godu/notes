@@ -60,6 +60,36 @@ code span.va { color: #000000; } /* Variable */
 code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style><link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"><style type="text/css">div#thesite{font-family:"Open Sans", serif;padding-top:1em;padding-bottom:1em}div#thesite p{line-height:150%}div#thesite h1, h2, h3, h4, h5, h6, .ui.header{font-family:"Oswald", sans-serif}div#thesite img{max-width:100%}div#thesite span.zettel-link-container span.zettel-link a{font-weight:bold;color:#2185d0;text-decoration:none}div#thesite span.zettel-link-container span.zettel-link a:hover{background-color:#2185d0;color:#ffffff}div#thesite span.zettel-link-container span.extra{color:auto;padding-right:0.29999em}div#thesite div.z-index ul{list-style-type:square;padding-left:1.5em}div#thesite div.zettel-view div.date{text-align:center;color:#808080}div#thesite div.zettel-view ul{padding-left:1.5em;list-style-type:square}div#thesite div.zettel-view h1{padding-top:0.2em;padding-bottom:0.2em;text-align:center;font-weight:700;background-color:rgba(33,133,208,0.1)}div#thesite div.zettel-view h2{font-weight:600;border-bottom:solid 1px #4682b4;margin-bottom:0.5em}div#thesite div.zettel-view h3{font-weight:400;margin:0px 0px 0.4em 0px}div#thesite div.zettel-view h4{font-weight:300;opacity:0.8}div#thesite div.zettel-view code{margin:auto auto auto auto;font-size:90%}div#thesite div.zettel-view code, pre, tt{font-family:"SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace}div#thesite div.zettel-view pre{padding:0.5em 0.5em 0.5em 0.5em;overflow:auto;max-width:100%}div#thesite div.zettel-view div.source-code{margin-left:auto;margin-right:auto}div#thesite div.zettel-view div.source-code pre{background-color:#f8f8f8}div#thesite div.zettel-view blockquote{background-color:#f9f9f9;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px}div#thesite div.zettel-view kbd{background-color:#eeeeee;color:#333333;border-radius:3px 3px 3px 3px;border:solid 1px #b4b4b4;padding:2px 4px 2px 4px;-webkit-box-shadow:0px 1px 1px rgba(0,0,0,0.2),inset 0px 2px 0px 0px rgba(255,255,255,0.7);-moz-box-shadow:0px 1px 1px rgba(0,0,0,0.2),inset 0px 2px 0px 0px rgba(255,255,255,0.7);-ms-box-shadow:0px 1px 1px rgba(0,0,0,0.2),inset 0px 2px 0px 0px rgba(255,255,255,0.7);-o-box-shadow:0px 1px 1px rgba(0,0,0,0.2),inset 0px 2px 0px 0px rgba(255,255,255,0.7);box-shadow:0px 1px 1px rgba(0,0,0,0.2),inset 0px 2px 0px 0px rgba(255,255,255,0.7);font-size:0.84999em;font-weight:700;line-height:1px;white-space:nowrap}div#thesite div.tag-tree div.node{font-weight:bold}div#thesite div.tag-tree div.node a.inactive{color:#555555}div#thesite div.connections a{color:#ffffff !important}div#thesite div.connections a:hover{opacity:0.5}div#thesite .footer a{color:#ffffff}div#thesite .footer-version, .footer-version a, .footer-version a:visited{color:#808080}div#thesite .footer-version a{font-weight:bold}div#thesite .footer-version{font-size:0.69999em}div#thesite [data-tooltip]:after{font-size:0.69999em}</style><link href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Roboto+Mono&amp;display=swap" rel="stylesheet"><script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script></head><body><div id="thesite" class="ui text container"><div class="zettel-view"><div class="ui raised segments"><div class="ui top attached segment"><h1 class="header">Theorem Solver</h1><p>Z3 is a <a href="https://en.wikipedia.org/wiki/Satisfiability_modulo_theories">Satisfiability Modulo Theories (SMT)</a> solver developed by Microsoft</p>
+<h2 id="motivation">Motivation</h2>
+<p>SAT solvers are automatic and efficient.</p>
+<p>A primary goal of research in Satisfiability Modulo Theories (SMT) is to create verification enfines that can reason natively at a higher level of abstraction, while still retaining the speed and automation of today’s Boolean engines.</p>
+<h2 id="firstorder-logic">First-Order Logic</h2>
+<p>Whereas the language of SAT solvers is Boolean logic, the language of SMT solvers id first-order logic.</p>
+<p>The language includes :</p>
+<ul>
+<li>
+constant <span class="math inline">\(a \in S\)</span>
+</li>
+<li>
+function <span class="math inline">\(f(x) = f(y)\)</span>
+</li>
+<li>
+predicate symbols <span class="math inline">\(x + y &lt; z\)</span>
+</li>
+</ul>
+<p>A theory is a set of sentences.</p>
+<p>A theory <code>T</code> is:</p>
+<ul>
+<li>
+<strong>valid</strong> if all sentences are true for all variable assignments.
+</li>
+<li>
+<strong>satisfiable</strong> if there exists some variables assignment such that all sentences are true.
+</li>
+<li>
+<strong>unsatifiable</strong> if all sentences are false for all variable assignments.
+</li>
+</ul>
 <h2 id="conjecture">Conjecture</h2>
 <h3 id="definition">Definition</h3>
 <p>A conjecture is a proposition that suspected to be true but for which no proof or disproof has yet been found.</p>
@@ -72,7 +102,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <blockquote>
 <p>The regions of any simple planar map can be colored with only four colors, in such a waythat any two adjacent regions have different colors.</p>
 </blockquote>
-<h3 id="sample">Sample</h3>
+<h3 id="how-smt-could-help">How SMT could help ?</h3>
+<p>SMT</p>
 <pre><code class="language-smt">(declare-const p Bool)
 (declare-const q Bool)
 (declare-const r Bool)
@@ -92,4 +123,43 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span>  </span><span class="kw">let</span><span> conjecture </span><span class="ot">=</span><span> ((p </span><span class="op">.=&gt;</span><span> q) </span><span class="op">.&amp;&amp;</span><span> (q </span><span class="op">.=&gt;</span><span> r)) </span><span class="op">.=&gt;</span><span> (p </span><span class="op">.=&gt;</span><span> r)</span>
 <span>  constrain </span><span class="op">$</span><span> sNot conjecture</span>
 </code></pre></div>
+<h3 id="npcompletion-problem">NP-Completion problem</h3>
+<p><img src="https://imgs.xkcd.com/comics/np_complete.png" alt="XKCD 287"></p>
+<p><span class="math display">\[ a, b, c, d, e, f \in \mathbb{N}\]</span><span class="math display">\[ 2.15a + 2.75b + 3.35c + 3.55d + 4.20e + 5.80f == 15.05\]</span></p>
+<pre><code class="language-smt">(declare-fun a () Int)
+(declare-fun b () Int)
+(declare-fun c () Int)
+(declare-fun d () Int)
+(declare-fun e () Int)
+(declare-fun f () Int)
+(assert (&gt;= a 0))
+(assert (&gt;= b 0))
+(assert (&gt;= c 0))
+(assert (&gt;= d 0))
+(assert (&gt;= e 0))
+(assert (&gt;= f 0))
+(assert
+  (= 
+    (+ 
+      (+ 
+        (+
+          (+
+            (+ 
+              (* 2.15 a)
+              (* 2.75 b)
+            )
+            (* 3.35 c)
+          )
+          (* 3.55 d)
+        )
+        (* 4.20 e)
+      )
+      (* 5.80 f)
+    )
+    15.05
+  )
+)
+(check-sat)
+(get-model)
+</code></pre>
 <span title="Tag" class="ui black right ribbon label"><a href="search.html?tag=theorem+solver" title="See all zettels tagged &#39;theorem solver&#39;">theorem solver</a></span><p></p><span title="Tag" class="ui black right ribbon label"><a href="search.html?tag=z3" title="See all zettels tagged &#39;z3&#39;">z3</a></span><p></p><div title="Zettel creation date" class="date">2020-05-16</div></div></div><div class="ui inverted blue top attached connections segment"><div class="ui two column grid"><div class="column"><div class="ui header">Down</div><ul></ul></div><div class="column"><div class="ui header">Up</div><ul></ul><div class="ui header">Other backlinks</div><ul></ul></div></div></div><div class="ui inverted black bottom attached footer segment"><div class="ui equal width grid"><div class="center aligned column"><a href="." title="/"><i class="fas fa-home"></i></a></div><div class="center aligned column"><a href="search.html" title="Search Zettels"><i class="fas fa-search"></i></a></div><div class="center aligned column"><a href="z-index.html" title="All Zettels (z-index)"><i class="fas fa-tree"></i></a></div></div></div><div class="ui one column grid footer-version"><div class="center aligned column"><p>Generated by <a href="https://github.com/srid/neuron">Neuron</a></p></div></div></div></div></body></html>
