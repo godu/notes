@@ -15,7 +15,7 @@ jobs:
       - name: Install Nix ❄️
         uses: cachix/install-nix-action@v8
       - name: Install Cachix 📒
-        uses: cachix/cachix-action@v4
+        uses: cachix/cachix-action@v6
         with:
           name: srid
           signingKey: "${{ secrets.CACHIX_SIGNING_KEY }}"
