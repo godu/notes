@@ -12,18 +12,9 @@ jobs:
     steps:
       - name: Checkout source 📡
         uses: actions/checkout@v2
-      - name: Install Nix ❄️
-        uses: cachix/install-nix-action@v8
-      - name: Install Cachix 📒
-        uses: cachix/cachix-action@v6
-        with:
-          name: srid
-          signingKey: "${{ secrets.CACHIX_SIGNING_KEY }}"
-      - name: Install Neuron 🧠
-        run: nix-env -if https://github.com/srid/neuron/archive/master.tar.gz
       - name: Build 🚧
         run: |
-          neuron rib -o .output -d .
+          docker run --rm -i -p 8080:8080 -v $PWD:/zettelkasten -w /zettelkasten sridca/neuron neuron rib -o .output -d .
       - name: Generate SVG Diagrams 📊
         uses: Timmy/plantuml-action@v1
         with:
