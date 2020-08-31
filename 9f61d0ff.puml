@@ -2,13 +2,13 @@
 
 start
 
-if (In Am ?) then (Hit)
+if (In Am?) then (Hit)
     stop
 else (miss)
-    if (In AlOut ?) then (Hit)
+    if (In AlOut?) then (Hit)
         :Add to Am();
     else (Miss)
-        if (In AlIn ?) then (Miss)
+        if (In AlIn?) then (Miss)
             :Add to AlIn();
             :Add the tail of AlIn to AlOut();
         else (hit)
