@@ -1,0 +1,34 @@
+@startuml
+
+(Cash) as "Cash\nLiquid Value"
+
+component SolutionFulfillment [
+    Solution Fulfillment
+    Creative Management
+]
+
+(New Recipe\nDiscovered Value) as NewRecipe
+
+component OrderFulfillment [
+    Order Fulfillment
+    Replicated Management
+]
+
+(Repeatable Business\nReplicated Value) as RepeatableBusiness
+
+component CashFulfillment [
+    Cash Fulfillment
+    Financial Management
+]
+
+(Delivered Value\nCash Value) as DeliveredValue
+
+Cash --> SolutionFulfillment : Investment
+SolutionFulfillment --> NewRecipe
+NewRecipe --> OrderFulfillment
+OrderFulfillment --> RepeatableBusiness
+RepeatableBusiness --> CashFulfillment
+CashFulfillment --> DeliveredValue
+DeliveredValue --> Cash : Next Investment
+
+@enduml
