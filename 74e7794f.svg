@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="789px" preserveAspectRatio="none" style="width:379px;height:789px;" version="1.1" viewBox="0 0 379 789" width="379px" zoomAndPan="magnify"><defs><filter height="300%" id="f1pvcu1qrxnu80" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><ellipse cx="198.5704" cy="29.7139" fill="#FEFECE" filter="url(#f1pvcu1qrxnu80)" rx="52.5704" ry="23.7139" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="184.0704" y="22.7029">Cash</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="78" x="159.5704" y="38.9997">Liquid Value</text><!--MD5=[c219c591bb3a411e6b3f7f64e6968b4e]
+entity SolutionFulfillment--><rect fill="#FEFECE" filter="url(#f1pvcu1qrxnu80)" height="62.5938" style="stroke: #A80036; stroke-width: 1.5;" width="180" x="36.5" y="130"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="196.5" y="135"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="194.5" y="137"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="194.5" y="141"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="126" x="51.5" y="162.9951">Solution Fulfillment</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="140" x="51.5" y="179.292">Creative Management</text><ellipse cx="117.6544" cy="278.528" fill="#FEFECE" filter="url(#f1pvcu1qrxnu80)" rx="75.6544" ry="24.528" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="74" x="80.6544" y="272.7976">New Recipe</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="110" x="62.6544" y="289.0945">Discovered Value</text><!--MD5=[6ba028092a2c3776fd002ba8257d85a9]
+entity OrderFulfillment--><rect fill="#FEFECE" filter="url(#f1pvcu1qrxnu80)" height="62.5938" style="stroke: #A80036; stroke-width: 1.5;" width="193" x="7" y="364"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="180" y="369"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="178" y="371"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="178" y="375"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="112" x="22" y="396.9951">Order Fulfillment</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="153" x="22" y="413.292">Replicated Management</text><ellipse cx="120.5201" cy="513.0685" fill="#FEFECE" filter="url(#f1pvcu1qrxnu80)" rx="91.0201" ry="25.0685" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="130" x="55.5201" y="510.9848">Repeatable Business</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="105" x="68.0201" y="527.2817">Replicated Value</text><!--MD5=[2538dcc0748c01dbcfc4fccb873a571e]
+entity CashFulfillment--><rect fill="#FEFECE" filter="url(#f1pvcu1qrxnu80)" height="62.5938" style="stroke: #A80036; stroke-width: 1.5;" width="182" x="32.5" y="599"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="194.5" y="604"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="192.5" y="606"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="192.5" y="610"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="47.5" y="631.9951">Cash Fulfillment</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="142" x="47.5" y="648.292">Financial Management</text><ellipse cx="196.3028" cy="747.5064" fill="#FEFECE" filter="url(#f1pvcu1qrxnu80)" rx="70.3028" ry="24.5064" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="145.3028" y="746.2698">Delivered Value</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="68" x="162.3028" y="762.5667">Cash Value</text><!--MD5=[1efadbe0ca8c88ce0933579f8e0faa7d]
+link Cash to SolutionFulfillment--><path d="M186.29,52.55 C175.3,72.38 158.97,101.87 146.15,125.01 " fill="none" id="Cash-to-SolutionFulfillment" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="143.64,129.55,151.5074,123.6252,146.0682,125.1792,144.5142,119.74,143.64,129.55" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="66" x="170.5" y="96.0669">Investment</text><!--MD5=[11a3dba5d34698fc978b2f20002b27cc]
+link SolutionFulfillment to NewRecipe--><path d="M124.11,193.02 C122.76,210.26 121.08,231.7 119.76,248.66 " fill="none" id="SolutionFulfillment-to-NewRecipe" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="119.36,253.77,124.0669,245.1187,119.7599,248.786,116.0926,244.4789,119.36,253.77" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d8cbf66748c64303de347bd0f28f6f81]
+link NewRecipe to OrderFulfillment--><path d="M114.63,303.05 C112.67,319.15 110.04,340.78 107.83,358.96 " fill="none" id="NewRecipe-to-OrderFulfillment" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="107.21,363.99,112.2596,355.5341,107.8091,359.026,104.3172,354.5756,107.21,363.99" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[1edccdca511d9b4651941e4fd7803c27]
+link OrderFulfillment to RepeatableBusiness--><path d="M108.01,427.15 C110.54,444.35 113.69,465.7 116.18,482.68 " fill="none" id="OrderFulfillment-to-RepeatableBusiness" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="116.94,487.8,119.5848,478.3129,116.2109,482.8534,111.6703,479.4795,116.94,487.8" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[2e5050d2599a3bbae41f75760ff50f7e]
+link RepeatableBusiness to CashFulfillment--><path d="M121.13,538.21 C121.54,554.16 122.09,575.33 122.56,593.26 " fill="none" id="RepeatableBusiness-to-CashFulfillment" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="122.7,598.72,126.4673,589.6202,122.5715,593.7217,118.47,589.8258,122.7,598.72" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3e730188e2205ee8b299a5d02ad56f18]
+link CashFulfillment to DeliveredValue--><path d="M142.87,662.02 C154.16,679.81 168.28,702.05 179.2,719.25 " fill="none" id="CashFulfillment-to-DeliveredValue" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="181.9,723.51,180.4599,713.767,179.223,719.287,173.7031,718.0501,181.9,723.51" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[ea018e0498c2e24928d77539a15463c8]
+link DeliveredValue to Cash--><path d="M221.55,724.52 C243.02,703.14 270.5,668.54 270.5,631.5 C270.5,160.5 270.5,160.5 270.5,160.5 C270.5,124.31 263.52,114.39 245.5,83 C239.74,72.97 231.83,63.19 224.14,54.84 " fill="none" id="DeliveredValue-to-Cash" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="220.39,50.86,223.6455,60.1553,223.8168,54.501,229.4711,54.6723,220.39,50.86" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="96" x="271.5" y="400.0669">Next Investment</text><!--MD5=[d09fe7490387c16235cff7ba9705f25b]
+@startuml
+
+(Cash) as "Cash\nLiquid Value"
+
+component SolutionFulfillment [
+    Solution Fulfillment
+    Creative Management
+]
+
+(New Recipe\nDiscovered Value) as NewRecipe
+
+component OrderFulfillment [
+    Order Fulfillment
+    Replicated Management
+]
+
+(Repeatable Business\nReplicated Value) as RepeatableBusiness
+
+component CashFulfillment [
+    Cash Fulfillment
+    Financial Management
+]
+
+(Delivered Value\nCash Value) as DeliveredValue
+
+Cash - -> SolutionFulfillment : Investment
+SolutionFulfillment - -> NewRecipe
+NewRecipe - -> OrderFulfillment
+OrderFulfillment - -> RepeatableBusiness
+RepeatableBusiness - -> CashFulfillment
+CashFulfillment - -> DeliveredValue
+DeliveredValue - -> Cash : Next Investment
+
+@enduml
+
+PlantUML version 1.2020.16(Sun Aug 23 20:20:43 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
