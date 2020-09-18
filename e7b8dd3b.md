@@ -53,3 +53,7 @@ containsElem a = filter (elem a)
 containsElem_ :: (Foldable f, Eq a) => a -> [f a] -> [f a]
 containsElem_ = filter . elem
 ```
+
+## References
+
+- [Haskell mini-patterns handbook](https://kowainik.github.io/posts/haskell-mini-patterns

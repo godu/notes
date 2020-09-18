@@ -46,3 +46,7 @@ sumGo = go 0
     go !acc [] = acc
     go acc (x:xs) = go (acc + x) xs
 ```
+
+## References
+
+- [Haskell mini-patterns handbook](https://kowainik.github.io/posts/haskell-mini-patterns)

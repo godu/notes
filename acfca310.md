@@ -68,3 +68,7 @@ data Settings
     | OnlyFrontend FrontendSettings
     | BothSettings BackendSettings FrontendSettings
 ```
+
+## References
+
+- [Haskell mini-patterns handbook](https://kowainik.github.io/posts/haskell-mini-patterns
