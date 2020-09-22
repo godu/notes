@@ -8,7 +8,7 @@ link NewRecipe to OrderFulfillment--><path d="M114.63,303.05 C112.67,319.15 110.
 link OrderFulfillment to RepeatableBusiness--><path d="M108.01,427.15 C110.54,444.35 113.69,465.7 116.18,482.68 " fill="none" id="OrderFulfillment-to-RepeatableBusiness" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="116.94,487.8,119.5848,478.3129,116.2109,482.8534,111.6703,479.4795,116.94,487.8" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[2e5050d2599a3bbae41f75760ff50f7e]
 link RepeatableBusiness to CashFulfillment--><path d="M121.13,538.21 C121.54,554.16 122.09,575.33 122.56,593.26 " fill="none" id="RepeatableBusiness-to-CashFulfillment" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="122.7,598.72,126.4673,589.6202,122.5715,593.7217,118.47,589.8258,122.7,598.72" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3e730188e2205ee8b299a5d02ad56f18]
 link CashFulfillment to DeliveredValue--><path d="M142.87,662.02 C154.16,679.81 168.28,702.05 179.2,719.25 " fill="none" id="CashFulfillment-to-DeliveredValue" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="181.9,723.51,180.4599,713.767,179.223,719.287,173.7031,718.0501,181.9,723.51" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[ea018e0498c2e24928d77539a15463c8]
-link DeliveredValue to Cash--><path d="M221.55,724.52 C243.02,703.14 270.5,668.54 270.5,631.5 C270.5,160.5 270.5,160.5 270.5,160.5 C270.5,124.31 263.52,114.39 245.5,83 C239.74,72.97 231.83,63.19 224.14,54.84 " fill="none" id="DeliveredValue-to-Cash" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="220.39,50.86,223.6455,60.1553,223.8168,54.501,229.4711,54.6723,220.39,50.86" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="96" x="271.5" y="400.0669">Next Investment</text><!--MD5=[d09fe7490387c16235cff7ba9705f25b]
+link DeliveredValue to Cash--><path d="M221.55,724.52 C243.02,703.14 270.5,668.54 270.5,631.5 C270.5,160.5 270.5,160.5 270.5,160.5 C270.5,124.31 263.52,114.39 245.5,83 C239.74,72.97 231.83,63.19 224.14,54.84 " fill="none" id="DeliveredValue-to-Cash" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="220.39,50.86,223.6455,60.1553,223.8168,54.501,229.4711,54.6723,220.39,50.86" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="96" x="271.5" y="400.0669">Next Investment</text><!--MD5=[1bb43785aff408ee59bf5302b7e65998]
 @startuml
 
 (Cash) as "Cash\nLiquid Value"
@@ -44,7 +44,7 @@ DeliveredValue - -> Cash : Next Investment
 
 @enduml
 
-PlantUML version 1.2020.16(Sun Aug 23 20:20:43 GMT 2020)
+PlantUML version 1.2020.17(Sat Sep 19 12:30:11 GMT 2020)
 (GPL source distribution)
 Java Runtime: OpenJDK Runtime Environment
 JVM: OpenJDK 64-Bit Server VM
