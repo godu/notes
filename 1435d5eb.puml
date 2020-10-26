@@ -1,0 +1,11 @@
+@startwbs
+
+* CEO
+** VP of Engineering
+*** Engineering leaders
+** CTO
+** VP of Product
+*** Product managers
+** VP of Marketing
+
+@endwbs
