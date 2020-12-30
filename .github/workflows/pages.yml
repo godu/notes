@@ -23,6 +23,8 @@ jobs:
         uses: Timmy/plantuml-action@v1
         with:
           args: -v -o .output -tpng *.puml
+      - name: Move videos
+        run: cp *.mp4 .output/
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
