@@ -11,3 +11,9 @@ In functional programming, an anamorphism is a generalization of the concept of 
 
 The categorical dual of the anamorphism is the [[[d1b1f980]]].
 
+
+$$\begin{CD}
+F A @>{F h}>> F B\\
+@A{f}AA @A{g}AA \\
+A @>{h}>> B
+\end{CD}$$
