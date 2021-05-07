@@ -1,8 +1,7 @@
 ---
 date: 2020-09-13T15:41
 tags:
-  - haskell
-  - extension
+  - haskell/extension
 ---
 
 # DerivingVia

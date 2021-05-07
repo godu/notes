@@ -1,8 +1,7 @@
 ---
 date: 2021-05-06T12:59
 tags:
-  - haskell
-  - extension
+  - haskell/extension
 ---
 
 # FlexibleInstances
